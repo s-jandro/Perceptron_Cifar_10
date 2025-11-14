@@ -1,4 +1,8 @@
 # Perceptron_Cifar_10
+## Integrantes 
+  Sergio Paucar 
+  Renato Oscar Corrales Peña
+  Samuel iman
 *Perceptrón de entrada y salida basico
 *Se necesita usar Google Colab, una vez abierto cambiar el entrono de ejecución a gpru T4
 *Subir los tres archivos a Google Colab
