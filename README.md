@@ -1,15 +1,13 @@
-Aquí tienes una versión mejorada, clara y bien presentada de tu **README**.
-La dejé en formato Markdown, lista para pegar en GitHub:
 
----
+
 
 # **Perceptron CIFAR-10**
 
 Implementación básica de un perceptrón para clasificación utilizando la base de datos **CIFAR-10**, con soporte para ejecución acelerada en GPU (T4) mediante **Google Colab**.
 
----
 
-## 👥 **Integrantes**
+
+## **Integrantes**
 
 * **Sergio Paucar**
 * **Renato Oscar Corrales Peña**
@@ -17,23 +15,23 @@ Implementación básica de un perceptrón para clasificación utilizando la base
 
 ---
 
-## 🧠 **Descripción del proyecto**
+##  **Descripción del proyecto**
 
 Este proyecto implementa un **perceptrón simple** con entrada y salida básica para clasificar imágenes del dataset **CIFAR-10**.
 El código está diseñado para ejecutarse en **Google Colab** aprovechando una GPU **NVIDIA T4** para mejorar el rendimiento.
 
 ---
 
-## 🚀 **Instrucciones de ejecución en Google Colab**
+##  **Instrucciones de ejecución en Google Colab**
 
-### 1️⃣ Cambiar el entorno a GPU (T4)
+### 1 Cambiar el entorno a GPU (T4)
 
 En Colab:
 **Entorno de ejecución → Cambiar tipo de entorno de ejecución → GPU (T4)**
 
 ---
 
-### 2️⃣ Subir los 3 archivos del proyecto
+### 2 Subir los 3 archivos del proyecto
 
 Sube los archivos:
 
@@ -43,7 +41,7 @@ Sube los archivos:
 
 ---
 
-### 3️⃣ Verificar la GPU
+### 3 Verificar la GPU
 
 Ejecuta en una celda:
 
@@ -53,7 +51,7 @@ Ejecuta en una celda:
 
 ---
 
-### 4️⃣ Descargar y preparar el dataset CIFAR-10
+### 4 Descargar y preparar el dataset CIFAR-10
 
 Ejecuta:
 
@@ -67,7 +65,7 @@ Ejecuta:
 
 ---
 
-### 5️⃣ Compilar y ejecutar el programa
+### 5 Compilar y ejecutar el programa
 
 Ejecuta:
 
@@ -78,17 +76,6 @@ Ejecuta:
 
 ---
 
-## 📦 **Estructura del proyecto**
-
-```
-📁 Perceptron_CIFAR10
- ├── main.cu
- ├── cifar10_loader.cpp
- ├── cifar10_loader.h
- ├── data/ (se genera en Colab)
-```
-
----
 
 ## 📝 **Notas**
 
