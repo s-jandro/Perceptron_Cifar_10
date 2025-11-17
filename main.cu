@@ -1,5 +1,3 @@
-// perceptron_rosenblatt_cuda.cu
-// Compilar: nvcc -O3 perceptron_rosenblatt_cuda.cu -o perceptron_cuda
 #include <iostream>
 #include <vector>
 #include <random>
@@ -31,7 +29,7 @@ __global__ void forwardBatchKernel(const float *X, const float *W, const float *
     }
 }
 
-// Kernel Rosenblatt update: cada hilo procesa 1 muestra y hace atomicAdd en W y b
+// Kernel Rosenblatt update
 __global__ void rosenblattUpdateKernel(float *W, float *b,
                                        const float *X, const int *Y_labels,
                                        const float *Z,
@@ -97,7 +95,7 @@ int main() {
     std::normal_distribution<float> dist(0.0f, 0.01f);
     for (auto &w : W) w = dist(gen);
 
-    // Device allocations
+    
     float *d_W=nullptr, *d_b=nullptr, *d_X=nullptr, *d_Z=nullptr;
     int *d_Y=nullptr, *d_update_count=nullptr;
 
@@ -111,7 +109,7 @@ int main() {
     cudaMemcpy(d_W, W.data(), W.size() * sizeof(float), cudaMemcpyHostToDevice);
     cudaMemcpy(d_b, b.data(), b.size() * sizeof(float), cudaMemcpyHostToDevice);
 
-    // Host buffers for batches
+   
     std::vector<float> X_batch(BATCH_SIZE * INPUT_SIZE);
     std::vector<int> Y_batch(BATCH_SIZE);
 
@@ -261,3 +259,4 @@ std::cout << "===========================================\n\n";
 
     return 0;
 }
+
