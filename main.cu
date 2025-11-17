@@ -5,7 +5,7 @@
 #include <chrono>
 #include <fstream>
 #include <cstring>
-#include "cifar10_loader.h" // Debe proporcionar loadCIFAR10Batch y CIFAR10Data
+#include "cifar10_loader.h"
 
 #define THREADS_PER_BLOCK 256
 #define BATCH_SIZE 256
@@ -259,4 +259,5 @@ std::cout << "===========================================\n\n";
 
     return 0;
 }
+
 
